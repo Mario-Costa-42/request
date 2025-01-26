@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Você quer namorar comigo?</h1>
+        <img id="cuteImg" src="./Assests /cute.gif" alt="Cute animated illustration">
+        <div class="button-container">
+            <button class="btn" id="btnSim">Sim</button>
+            <button class="btn" id="btnNao" onclick="moveButton()">Não</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    function moveButton() {
+            // var x = Math.random() * (window.innerWidth - document.getElementById('btnNao').offsetWidth);
+            // var y = Math.random() * (window.innerHeight - document.getElementById('btnNao').offsetHeight);
+            var x = Math.floor(Math.random() * 181);
+            var y = Math.floor(Math.random() * 361);
+            document.getElementById('btnNao').style.left = `${x}px`;
+            document.getElementById('btnNao').style.top = `${y}px`;
+            // playAudio();
+        }
+
+
+
+
+</script>
+</html>
