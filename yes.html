@@ -8,12 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="photos">
-        <h1>The photos will be here</h1>
-
-
+    <div id="photo-conteiner">
+        <img src="/Assests /photo01.jpg" class="photo" alt="phto01">
+        <img src="/Assests /photo02.jpg" class="photo" alt="phto02">
+        <img src="/Assests /photo03.jpg" class="photo" alt="phto03">
+        <img src="/Assests /photo04.jpg" class="photo" alt="phto04">
     </div>
-
+     <h1 id="heart">❤️</h1>
+     <h1 id="loveYou">Te amo!!!!!</h1>
+     <video id="yesvideo" width="0" height="0" controls>
+        <source src="Assests /The Good Ending Sound Effect.mp4" 
+           type="video/mp4">
+    </video>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        playAudioYes();
+    });
+
+    function playAudioYes(){
+        document.getElementById('yesvideo').play();
+    };
+</script>
 </html>
